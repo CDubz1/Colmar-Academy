@@ -1,0 +1,161 @@
+html {
+  font-family: "Dubai", sans-serif;
+  font-size: 18px;
+  background-color: white;
+
+}
+
+.content {
+  display: flex;
+}
+
+
+nav {
+  justify-content: space-between;
+  margin: 16px 24px;
+  background-color: white;
+  color: rgb(166, 173,188);
+  border: solid 1px black;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1em;
+  color: RGB(33, 33, 34);
+  font-weight: bold;
+}
+
+.menu div {
+  margin-left: 16px;
+}
+
+.truncated-menu {
+  display: none;
+}
+
+.learn {
+  display: flex;
+  background-color: rgb(204, 204, 204);
+  background-size: cover;
+  padding: 32px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.image, .p1 {
+  width: 60%;
+  margin-left: 24px;
+  border: solid 1px blue;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  margin: auto 24px;
+  width: 40%;
+  border: solid 1px red;
+
+}
+
+.text h1 {
+  color: RGB(76, 76, 76);
+}
+
+.btn {
+  background-color: rgb(204, 204, 204);
+}
+
+.practice {
+  display: flex;
+  background-color: white;
+  background-size: cover;
+  padding: 32px 0;
+}
+
+.orientation img,
+.campus img,
+.guest img {
+  flex-direction: row;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  margin: auto 24px;
+  border: solid 1px red;
+}
+
+.orientation,
+.campus,
+.guest {
+  display: flex;
+}
+
+.guest {
+  background-color: rgb(214, 217, 220);
+}
+
+.orien-img,
+.campus-img,
+.guest-img {
+  margin: 16px;
+  width: 35%;
+}
+.disc-1 {
+  width: 65%;
+  margin: auto;
+}
+
+.learning {
+  display: block;
+  background-color: rgb(214, 217, 220);
+  border: solid 1px black;
+}
+.start {
+  display: flex;
+}
+.start h1 {
+  margin: 32px auto;
+}
+
+.flex-grid {
+  display: flex;
+  margin: 32px 72px;
+  background-color: rgb(214, 217, 220);
+  background: cover;
+  border: solid 1px red;
+}
+
+.flex-grid .col {
+  flex: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: white;
+}
+
+.thesis {
+  display: flex;
+}
+
+.thesis h1 {
+  margin: 32px auto;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  flex-grow: 1;
+}
