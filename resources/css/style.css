@@ -1,5 +1,5 @@
 html {
-  font-family: "Dubai", sans-serif;
+  font-family: 'Verdana', sans-serif;
   font-size: 18px;
   background-color: white;
 
@@ -26,7 +26,7 @@ nav div {
 nav h1 {
   font-size: 1em;
   color: RGB(33, 33, 34);
-  font-weight: bold;
+  font-weight: 550;
 }
 
 .menu div {
@@ -64,12 +64,34 @@ img {
 
 }
 
+h1, span, h2, p, h3 {
+  color: rgb(76, 76, 76);
+}
 .text h1 {
-  color: RGB(76, 76, 76);
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 18px 0px;
 }
 
-.btn {
-  background-color: rgb(204, 204, 204);
+.text span {
+  font-size: 1.25em;
+  font-weight: 450;
+  margin: 18px 0px;
+}
+.button {
+  display: inline-block;
+  padding: 16px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: rgb(76, 76, 76);
+  border: none;
+  border-radius: 7px;
+  width: 70%;
+  margin-top: 18px;
 }
 
 .practice {
