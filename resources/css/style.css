@@ -157,11 +157,10 @@ h1, span, h2, p, h3 {
 
 .info {
   flex-direction: column;
+  flex-grow: 1;
   width: 40%;
-  height: 100%;
-  margin: auto 24px;
+  margin: 0 24px;
   border: solid 1px red;
-  align-items: flex-start;
 }
 
 .orientation,
