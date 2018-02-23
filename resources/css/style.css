@@ -2,7 +2,7 @@ html {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 18px;
   background-color: white;
-
+  color: rgb(33, 33, 34);
 }
 
 .content {
@@ -14,8 +14,7 @@ nav {
   justify-content: space-between;
   margin: 16px 24px;
   background-color: white;
-  color: rgb(166, 173,188);
-  border: solid 1px black;
+  color: #8F939D;
 }
 
 nav div {
@@ -25,24 +24,74 @@ nav div {
 
 nav h1 {
   font-size: 1em;
-  color: RGB(33, 33, 34);
+  color: #28292C;
   font-weight: 550;
 }
 
-.menu div {
+nav li {
+  display: inline;
+  padding: 0 .5rem;
+}
+
+/*.menu div {
   margin-left: 16px;
+  color: #8F939D;
+}*/
+
+.menu a:hover {
+  color: #28292C;
+}
+
+.menu a {
+  color: #8F939D;
+  text-decoration: none;
 }
 
 .truncated-menu {
   display: none;
 }
 
+@media only screen and (max-width: 640px) {
+  nav .logo, nav .menu {
+    display: none;
+  }
+/*
+  nav .menu ul.truncated-menu {
+    display: table;
+    width: 100%;
+    list-style: none;
+
+  }
+  nav .menu ul.truncated-menu li {
+    display: table-cell;
+    text-align: center;
+
+    border: solid 1px blue;
+  }
+  nav .menu ul.truncated-menu li a{
+    border: solid 1px red;
+    display: block;
+
+  }
+*/
+  .truncated-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 16px;
+  }
+
+}
+
+
+
 .learn {
   display: flex;
-  background-color: rgb(204, 204, 204);
+  background-color: #ADB4C8;
   background-size: cover;
   padding: 32px 0;
 }
+
 
 img {
   width: 100%;
@@ -51,7 +100,6 @@ img {
 .image, .p1 {
   width: 60%;
   margin-left: 24px;
-  border: solid 1px blue;
 }
 
 .text {
@@ -60,12 +108,53 @@ img {
   padding-left: 24px;
   margin: auto 24px;
   width: 40%;
-  border: solid 1px red;
+}
 
+.button {
+  display: inline-block;
+  padding: 16px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #8F939D;
+  border: none;
+  border-radius: 7px;
+  width: 70%;
+  margin-top: 18px;
+}
+
+.button:hover {
+  background-color: #28292C;
+  color: #D6D8DD;
+}
+
+@media only screen and (max-width: 640px) {
+  .learn {
+    display: block;
+  }
+  .image {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+
+  }
+
+  .text, .button {
+    display: inline-block;
+    width: 90%;
+    align-content: center;
+  }
+
+  img {
+    background-size: cover;
+  }
 }
 
 h1, span, h2, p, h3 {
-  color: rgb(76, 76, 76);
+  color: #313236;
 }
 .text h1, .disc h2, .start h1, .thesis h1{
   font-size: 2.5em;
@@ -76,7 +165,7 @@ h1, span, h2, p, h3 {
 .disc p, .disc-1 p, .col p {
   font-size: 1em;
   font-weight: lighter;
-  padding-bottom: 8px;
+  padding: 8px 0;
 }
 
 .disc p {
@@ -108,37 +197,14 @@ h1, span, h2, p, h3 {
 .col h2, .disc-1 h3 {
   font-size: 1.25em;
   font-weight: 500;
-  padding-bottom: 8px;
 }
 
-.disc h3 {
 
+.col h2, .col h3, .col p {
+  padding: 8px 16px;
 }
 
-.col h3 {
-  font-size: 1em;
-  padding-bottom: 8px;
-}
-
-.button {
-  display: inline-block;
-  padding: 16px 25px;
-  font-size: 1em;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: white;
-  background-color: rgb(76, 76, 76);
-  border: none;
-  border-radius: 7px;
-  width: 70%;
-  margin-top: 18px;
-}
-
-.button:hover {
-  background-color: rgb(108, 122, 140);
-}
+/* Keep Practicing Section */
 
 .practice {
   display: flex;
@@ -148,9 +214,7 @@ h1, span, h2, p, h3 {
 }
 
 
-.orientation img,
-.campus img,
-.guest img {
+.side-bar img {
   flex-direction: row;
   height: auto;
 }
@@ -160,22 +224,19 @@ h1, span, h2, p, h3 {
   flex-grow: 1;
   width: 40%;
   margin: 0 24px;
-  border: solid 1px red;
 }
 
-.orientation,
-.campus,
-.guest {
+.side-bar {
   display: flex;
 }
 
-.guest {
+.side-bar:hover {
   background-color: rgb(214, 217, 220);
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 
-.orien-img,
-.campus-img,
-.guest-img {
+.side-bar-img {
   margin: 16px;
   width: 35%;
 }
@@ -184,14 +245,44 @@ h1, span, h2, p, h3 {
   margin: auto;
 }
 
+@media only screen and (max-width: 640px) {
+  .p1 {
+    display: none;
+  }
+
+  .side-bar {
+    display: block;
+  }
+
+  .side-bar-img {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  img {
+    background-size: cover;
+  }
+
+  .disc-1 {
+    width: 100%;
+    margin: auto;
+  }
+
+
+}
+/* Start Learning Section */
+
 .learning {
   display: block;
-  background-color: rgb(214, 217, 220);
-  border: solid 1px black;
+  background-color: #ADB4C8;
+  padding: 32px 72px;
 }
 
 .start {
   display: flex;
+  background-color: #ADB4C8;
 }
 .start h1 {
   margin: 32px auto;
@@ -199,10 +290,9 @@ h1, span, h2, p, h3 {
 
 .flex-grid {
   display: flex;
-  margin: 32px 56px;
-  background-color: rgb(214, 217, 220);
+  padding: 32px 56px;
+  background-color: #ADB4C8;
   background: cover;
-  border: solid 1px red;
 }
 
 .flex-grid .col {
@@ -212,6 +302,24 @@ h1, span, h2, p, h3 {
   background-color: white;
 }
 
+.col:hover {
+  background-color: #D6D8DD;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+.moile {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .flex-grid {
+    display: none;
+  }
+}
+
+/* thesis section */
+
 .thesis {
   display: flex;
 }
@@ -220,9 +328,14 @@ h1, span, h2, p, h3 {
   margin: 32px auto;
 }
 
+.practice {
+  background-color: white;
+}
+
 footer {
   display: flex;
   align-items: center;
+  background-color: #ADB4C8;
   padding: 16px 24px;
 }
 
