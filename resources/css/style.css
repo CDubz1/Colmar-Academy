@@ -33,11 +33,6 @@ nav li {
   padding: 0 .5rem;
 }
 
-/*.menu div {
-  margin-left: 16px;
-  color: #8F939D;
-}*/
-
 .menu a:hover {
   color: #28292C;
 }
@@ -55,25 +50,7 @@ nav li {
   nav .logo, nav .menu {
     display: none;
   }
-/*
-  nav .menu ul.truncated-menu {
-    display: table;
-    width: 100%;
-    list-style: none;
 
-  }
-  nav .menu ul.truncated-menu li {
-    display: table-cell;
-    text-align: center;
-
-    border: solid 1px blue;
-  }
-  nav .menu ul.truncated-menu li a{
-    border: solid 1px red;
-    display: block;
-
-  }
-*/
   .truncated-menu {
     display: flex;
     align-items: center;
@@ -83,7 +60,7 @@ nav li {
 
 }
 
-
+/* Main Content */
 
 .learn {
   display: flex;
@@ -151,7 +128,14 @@ img {
   img {
     background-size: cover;
   }
+
+  .learn .text h1 {
+    font-size: 2em;
+  }
+
 }
+
+/* text changes */
 
 h1, span, h2, p, h3 {
   color: #313236;
@@ -219,7 +203,7 @@ h1, span, h2, p, h3 {
   height: auto;
 }
 
-.info {
+.info1 {
   flex-direction: column;
   flex-grow: 1;
   width: 40%;
@@ -280,6 +264,7 @@ h1, span, h2, p, h3 {
   padding: 32px 72px;
 }
 
+
 .start {
   display: flex;
   background-color: #ADB4C8;
@@ -308,20 +293,47 @@ h1, span, h2, p, h3 {
   transition-duration: 1s;
 }
 
-.moile {
-  display: none;
-}
+
+
 
 @media only screen and (max-width: 640px) {
-  .flex-grid {
+  .col img, .col h3, .col p{
     display: none;
+  }
+
+  .learning .flex-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    /*border: solid 1px red;*/
+  }
+
+  .flex-grid .col {
+    background-color: #ADB4C8;
+  }
+
+  .learning .flex-grid h2 {
+    padding: 16px 8px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+  }
+
+  .learning .flex-grid h2:hover {
+    background-color: #28292C;
+    color: #D6D8DD;
+  }
+  .learning .start h1 {
+    font-size: 3em;
   }
 }
 
+
+
 /* thesis section */
 
-.thesis {
+.thesis, .practice {
   display: flex;
+  margin: 16px 24px;
 }
 
 .thesis h1 {
@@ -331,6 +343,21 @@ h1, span, h2, p, h3 {
 .practice {
   background-color: white;
 }
+
+@media only screen and (max-width: 640px) {
+  .info2, .disc2 {
+    display: none;
+  }
+
+  .practice {
+    margin: 16px 0;
+  }
+  .thesis h1 {
+    font-size: 2em;
+    margin: 16px auto;
+  }
+}
+/* Footer */
 
 footer {
   display: flex;
@@ -352,4 +379,10 @@ footer a, p {
   font-size: 1em;
   font-weight: lighter;
   color: rgb(76, 76, 76);
+}
+
+@media only screen and (max-width: 640px) {
+  footer a {
+    display: none;
+  }
 }
