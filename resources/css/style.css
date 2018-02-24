@@ -197,10 +197,14 @@ h1, span, h2, p, h3 {
   padding: 32px 0;
 }
 
+.p1 {
+  margin-left: 0;
+}
 
 .side-bar img {
   flex-direction: row;
   height: auto;
+  margin: 24px 0;
 }
 
 .info1 {
