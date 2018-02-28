@@ -46,7 +46,7 @@ nav li {
   display: none;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 700px) {
   nav .logo, nav .menu {
     display: none;
   }
@@ -108,7 +108,7 @@ img {
   color: #D6D8DD;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 700px) {
   .learn {
     display: block;
   }
@@ -233,7 +233,7 @@ h1, span, h2, p, h3 {
   margin: auto;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 700px) {
 
   .p1 {
     display: none;
@@ -301,7 +301,7 @@ h1, span, h2, p, h3 {
 
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 700px) {
   .col img, .col h3, .col p{
     display: none;
   }
@@ -355,7 +355,7 @@ h1, span, h2, p, h3 {
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 700px) {
   .info2, .disc2 {
     display: none;
   }
