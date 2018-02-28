@@ -32,6 +32,10 @@ nav li {
   padding: 0 .5rem;
 }
 
+.logo img {
+  height: 1em;
+}
+
 .menu a:hover {
   color: #28292C;
 }
