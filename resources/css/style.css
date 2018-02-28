@@ -9,7 +9,6 @@ html {
   display: flex;
 }
 
-
 nav {
   justify-content: space-between;
   margin: 16px 24px;
@@ -50,14 +49,12 @@ nav li {
   nav .logo, nav .menu {
     display: none;
   }
-
   .truncated-menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 16px;
   }
-
 }
 
 /* Main Content */
@@ -68,7 +65,6 @@ nav li {
   background-size: cover;
   padding: 32px 0;
 }
-
 
 img {
   width: 100%;
@@ -116,23 +112,18 @@ img {
     margin: 0;
     width: 100%;
     padding: 0;
-
   }
-
   .text, .button {
     display: inline-block;
     width: 90%;
     align-content: center;
   }
-
   img {
     background-size: cover;
   }
-
   .learn .text h1 {
     font-size: 2em;
   }
-
 }
 
 /* text changes */
@@ -140,7 +131,8 @@ img {
 h1, span, h2, p, h3 {
   color: #313236;
 }
-.text h1, .disc h2, .start h1, .thesis h1{
+
+.text h1, .disc h2, .start h1, .thesis h1 {
   font-size: 2.5em;
   font-weight: bold;
   margin: 18px 0px;
@@ -182,7 +174,6 @@ h1, span, h2, p, h3 {
   font-size: 1.25em;
   font-weight: 500;
 }
-
 
 .col h2, .col h3, .col p {
   padding: 8px 16px;
@@ -228,39 +219,34 @@ h1, span, h2, p, h3 {
   margin: 16px;
   width: 35%;
 }
+
 .disc-1 {
   width: 65%;
   margin: auto;
 }
 
 @media only screen and (max-width: 700px) {
-
   .p1 {
     display: none;
   }
-
   .side-bar {
     display: block;
   }
-
   .side-bar-img {
     display: flex;
     margin: 0;
     width: 100%;
     padding: 32px 0;
   }
-
   img {
     background-size: cover;
   }
-
   .disc-1 {
     width: 100%;
     margin: auto;
   }
-
-
 }
+
 /* Start Learning Section */
 
 .learning {
@@ -269,11 +255,11 @@ h1, span, h2, p, h3 {
   padding: 32px 72px;
 }
 
-
 .start {
   display: flex;
   background-color: #ADB4C8;
 }
+
 .start h1 {
   margin: 32px auto;
 }
@@ -298,31 +284,24 @@ h1, span, h2, p, h3 {
   transition-duration: 1s;
 }
 
-
-
-
 @media only screen and (max-width: 700px) {
-  .col img, .col h3, .col p{
+  .col img, .col h3, .col p {
     display: none;
   }
-
   .learning .flex-grid {
     display: flex;
     flex-direction: column;
     padding: 8px;
     /*border: solid 1px red;*/
   }
-
   .flex-grid .col {
     background-color: #ADB4C8;
   }
-
   .learning .flex-grid h2 {
     padding: 16px 8px;
     margin-top: 20px;
     background-color: whitesmoke;
   }
-
   .learning .flex-grid h2:hover {
     background-color: #28292C;
     color: #D6D8DD;
@@ -331,8 +310,6 @@ h1, span, h2, p, h3 {
     font-size: 3em;
   }
 }
-
-
 
 /* thesis section */
 
@@ -354,25 +331,21 @@ h1, span, h2, p, h3 {
   padding-bottom: 8px;
 }
 
-
 @media only screen and (max-width: 700px) {
   .info2, .disc2 {
     display: none;
   }
 
-  .practice {
-    display: flex;
-    margin: 0;
+  .thesis h1 {
+    font-size: 2em;
+    margin: 16px auto;
   }
 
   .practice {
     margin: 16px 0;
   }
-  .thesis h1 {
-    font-size: 2em;
-    margin: 16px auto;
-  }
 }
+
 /* Footer */
 
 footer {
