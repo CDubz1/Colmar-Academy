@@ -360,6 +360,10 @@ h1, span, h2, p, h3 {
     display: none;
   }
 
+  .p1 {
+    display: block;
+  }
+
   .practice {
     margin: 16px 0;
   }
